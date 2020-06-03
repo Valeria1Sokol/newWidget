@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 47vw;
+    padding: 2vw 1.25vw 2.81vw;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 93%, rgba(0, 157, 75, 1) 93%);
+}
+
+.content .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .box .logoLeft {
+    width: 13.5vw;
+}
+
+.content .box .logoRight {
+    width: 8.34vw;
+}
+
+.content .box .stars {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .box .stars .star {
+    width: 2vw;
+    margin: 0 0.27vw 0 0;
+}
+
+.content .box .tittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content .box .tittle .tittleText {
+    text-align: center;
+    font-size: 0.94vw;
+    color: #3b3b3b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.16vw;
+    margin: 0.84vw 0 0.63vw;
+}
+
+.content .box .tittle .text {
+    text-align: center;
+    font-size: 0.63vw;
+    color: #3b3b3b;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0 0.53vw;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.06vw;
+    text-underline-position: under;
+}
+
+.content .box .tittle .text:first-of-type {
+    border-right: 0.1vw solid #3b3b3b;
+}
+
+.content .ranked {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(ranked.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0vw 0 0.4vw;
+    width: 6vw;
+    height: 5.9vw;
+}
+
+.content .ranked .rankedText {
+    text-transform: uppercase;
+    font-size: 0.68vw;
+    color: black;
+    letter-spacing: 0.06vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 0 0.42vw;
+    text-align: center;
+}
+
+.content .ranked .year {
+    text-transform: uppercase;
+    font-size: 0.63vw;
+    color: white;
+    letter-spacing: 0.06vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold
+}
+
+@media all and (max-width:768px) {
+    .content .ranked .rankedText {
+        margin: 0 0 0.2vw;
+    }
+}
